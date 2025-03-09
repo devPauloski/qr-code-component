@@ -1,0 +1,79 @@
+:root {
+  /* Colors */
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Slate-300: hsl(212, 45%, 89%);
+  --clr-Slate-500: hsl(216, 15%, 48%);
+  --clr-Slate-900: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --ff-primary: "Outfit", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+svg,
+img,
+picture {
+  max-inline-size: 100%;
+  display: block;
+}
+
+/* General Styling */
+body {
+  font-family: var(--ff-primary);
+  font-size: .9375rem;
+  font-weight: var(--fw-regular);
+  color: var(--clr-Slate-500);
+  background-color: var(--clr-Slate-300);
+  place-content: center;
+}
+
+.wrapper {
+  max-inline-size: 20.125rem;
+  inline-size: 90%;
+  margin-inline: auto;
+  padding: 1.125rem;
+  border-radius: 1.25rem;
+  background-color: var(--clr-White);
+  display: grid;
+  gap: 1.75rem;
+  text-align: center;
+}
+
+.wrapper img {
+  border-radius: .875rem;
+}
+
+.wrapper h1 {
+  font-size: 20px;
+  line-height: 1.125;
+  font-weight: var(--fw-bold);
+  color: var(--clr-Slate-900);
+}
+
+.wrapper p {
+  margin-block-end: .875rem;
+}
+
+.wrapper > *:not(img) {
+  padding-inline: .875rem;
+}
